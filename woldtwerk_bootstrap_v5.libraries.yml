@@ -1,0 +1,4 @@
+globals:
+  version: VERSION
+  dependencies:
+    - core/drupal

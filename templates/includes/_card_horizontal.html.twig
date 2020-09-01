@@ -1,0 +1,38 @@
+{% if context.image %}
+  {% set col = 8 %}
+{% else %}
+  {% set col = 12 %}
+{% endif %}
+
+<article class="card mb-3" {{ context.attributes }}>
+  <div class="row g-0">
+    {% if context.image %}
+      <div class="col-md-4">
+        {{ context.image }}
+      </div>
+    {% endif %}
+    <div class="col-md-{{ col }}">
+      <div class="card-body">
+        {% if context.title %}
+          {{ context.title.prefix }}
+          <h5 class="card-title" {{ context.title.attributes }}>
+            <a href='{{ url }}'>{{ context.title.label }}</a>
+          </h5>
+          {{ context.title.suffix }}
+        {% endif %}
+        {% if context.content.text %}
+          <p class="card-text" context.content.attributes>{{ context.content.text }}</p>
+        {% endif %}
+        {% if context.meta %}
+          <p class="card-text">
+            <small class="text-muted">
+              {% for item in context.meta %}
+                {{ item }}
+              {% endfor %}
+            </small>
+          </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</article>

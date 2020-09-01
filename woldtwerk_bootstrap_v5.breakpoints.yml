@@ -1,0 +1,27 @@
+woldtwerk.small:
+  label: mobile
+  mediaQuery: '(min-width: 0px) and (max-width: 629px)'
+  weight: 1
+  multipliers:
+    - 1x
+
+woldtwerk.medium:
+  label: medium
+  mediaQuery: '(min-width: 630px) and (max-width: 1023px)'
+  weight: 2
+  multipliers:
+  - 1x
+
+woldtwerk.large:
+  label: large
+  mediaQuery: '(min-width: 1024px) and (max-width: 1439px)'
+  weight: 3
+  multipliers:
+  - 1x
+
+woldtwerk.xlarge:
+  label: xLarge
+  mediaQuery: '(min-width: 1440px)'
+  weight: 4
+  multipliers:
+  - 1x

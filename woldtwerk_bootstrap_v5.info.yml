@@ -1,0 +1,16 @@
+name: woldtwerk_bootstrap_v5
+type: theme
+description: 'woldtwerk_bootstrap_v5 by by Willi Woldt.'
+package: woldtwerk
+base theme: false
+screenshot: woldtwerk.png
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - woldtwerk_bootstrap_v5/globals
+
+regions:
+  header: Header
+  messages: Messages
+  content: Content
+  footer: Footer
